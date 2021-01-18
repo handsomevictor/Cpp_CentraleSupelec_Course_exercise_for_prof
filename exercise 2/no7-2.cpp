@@ -1,6 +1,16 @@
 #include<iostream>
 #include<math.h>
 
+/*
+Findings about the number of recursive calls:
+
+The first approach is using normal recursive method and the total number of recursive calls equals the power input. 
+For example if you want to calculate n-th power of a number M, then the number of recursive calls would be n.
+
+But the second method is an optimized way to do the calculation. It adopts the idea of binary sort. If the number of 
+power is n, then the largest number of recursive calls would be floor(log2(n))+1, which is far less than that of normal recursive method.
+*/
+
 using namespace std;
 int power(float a, int n);
 
